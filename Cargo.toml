@@ -1,0 +1,17 @@
+[package]
+name = "altoku"
+version = "0.1.0"
+edition = "2021"
+authors = ["Muhammad Nauman Raza <devraza.hazard643@slmail.me>"]
+description = "A TUI japanese media aggregate."
+readme = "README.md"
+license = "AGPL-3.0"
+
+[dependencies]
+crossterm = { version = "0.27.0", features = [ "event-stream" ] }
+futures = "0.3.30"
+ratatui = "0.26.3"
+reqwest = { version = "0.12.4", features = [ "json" ] }
+serde = { version = "1.0.203", features = [ "derive" ] }
+tokio = { version = "1.38.0", features = [ "full" ] }
+tui-input = "0.8.0"
